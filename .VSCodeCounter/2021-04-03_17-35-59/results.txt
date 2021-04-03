@@ -1,0 +1,69 @@
+Date : 2021-04-03 17:35:59
+Directory : /home/toxic/Codes/VsCode/HttpServer
+Total : 37 files,  2098 codes, 949 comments, 289 blanks, all 3336 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         34 |      1,847 |        921 |        230 |      2,998 |
+| HTML     |          1 |        120 |          1 |         19 |        140 |
+| Markdown |          1 |         86 |          0 |         20 |        106 |
+| Makefile |          1 |         45 |         27 |         20 |         92 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                   |         37 |      2,098 |        949 |        289 |      3,336 |
+| WebHome                                                             |          1 |        120 |          1 |         19 |        140 |
+| include                                                             |         15 |        397 |        257 |         54 |        708 |
+| include/Utils                                                       |          4 |        113 |         65 |         18 |        196 |
+| src                                                                 |         16 |      1,391 |        637 |        158 |      2,186 |
+| test                                                                |          3 |         59 |         27 |         18 |        104 |
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                            | language | code       | comment    | blank      | total      |
++---------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/toxic/Codes/VsCode/HttpServer/Makefile                        | Makefile |         45 |         27 |         20 |         92 |
+| /home/toxic/Codes/VsCode/HttpServer/README.md                       | Markdown |         86 |          0 |         20 |        106 |
+| /home/toxic/Codes/VsCode/HttpServer/WebHome/index.html              | HTML     |        120 |          1 |         19 |        140 |
+| /home/toxic/Codes/VsCode/HttpServer/include/Epoll.hpp               | C++      |         33 |         25 |          4 |         62 |
+| /home/toxic/Codes/VsCode/HttpServer/include/Header.hpp              | C++      |         15 |         14 |          2 |         31 |
+| /home/toxic/Codes/VsCode/HttpServer/include/Request.hpp             | C++      |         40 |         20 |          5 |         65 |
+| /home/toxic/Codes/VsCode/HttpServer/include/Response.hpp            | C++      |         35 |         27 |          3 |         65 |
+| /home/toxic/Codes/VsCode/HttpServer/include/Router.hpp              | C++      |         19 |         11 |          3 |         33 |
+| /home/toxic/Codes/VsCode/HttpServer/include/Server.hpp              | C++      |         28 |         14 |          3 |         45 |
+| /home/toxic/Codes/VsCode/HttpServer/include/Setting.hpp             | C++      |         12 |          9 |          2 |         23 |
+| /home/toxic/Codes/VsCode/HttpServer/include/Socket.hpp              | C++      |         29 |         15 |          5 |         49 |
+| /home/toxic/Codes/VsCode/HttpServer/include/TException.hpp          | C++      |         11 |          9 |          2 |         22 |
+| /home/toxic/Codes/VsCode/HttpServer/include/Task.hpp                | C++      |         33 |         24 |          4 |         61 |
+| /home/toxic/Codes/VsCode/HttpServer/include/TaskThreadPool.hpp      | C++      |         29 |         24 |          3 |         56 |
+| /home/toxic/Codes/VsCode/HttpServer/include/Utils/FileUtil.hpp      | C++      |         45 |         21 |          6 |         72 |
+| /home/toxic/Codes/VsCode/HttpServer/include/Utils/LogBuffer.hpp     | C++      |         36 |         14 |          5 |         55 |
+| /home/toxic/Codes/VsCode/HttpServer/include/Utils/LogThreadPool.hpp | C++      |         32 |         22 |          6 |         60 |
+| /home/toxic/Codes/VsCode/HttpServer/include/Utils/TimeUtil.hpp      | C++      |          0 |          8 |          1 |          9 |
+| /home/toxic/Codes/VsCode/HttpServer/src/Epoll.cpp                   | C++      |        122 |         78 |         13 |        213 |
+| /home/toxic/Codes/VsCode/HttpServer/src/FileUtil.cpp                | C++      |        174 |         80 |         21 |        275 |
+| /home/toxic/Codes/VsCode/HttpServer/src/Header.cpp                  | C++      |         33 |         31 |          6 |         70 |
+| /home/toxic/Codes/VsCode/HttpServer/src/LogBuffer.cpp               | C++      |         71 |         27 |         15 |        113 |
+| /home/toxic/Codes/VsCode/HttpServer/src/LogThreadPool.cpp           | C++      |        132 |         41 |          9 |        182 |
+| /home/toxic/Codes/VsCode/HttpServer/src/Request.cpp                 | C++      |        213 |         90 |         19 |        322 |
+| /home/toxic/Codes/VsCode/HttpServer/src/Response.cpp                | C++      |        220 |         66 |         14 |        300 |
+| /home/toxic/Codes/VsCode/HttpServer/src/Router.cpp                  | C++      |         41 |         27 |          5 |         73 |
+| /home/toxic/Codes/VsCode/HttpServer/src/Server.cpp                  | C++      |         86 |         38 |         10 |        134 |
+| /home/toxic/Codes/VsCode/HttpServer/src/Setting.cpp                 | C++      |         22 |         21 |          7 |         50 |
+| /home/toxic/Codes/VsCode/HttpServer/src/Socket.cpp                  | C++      |         75 |         38 |         13 |        126 |
+| /home/toxic/Codes/VsCode/HttpServer/src/TException.cpp              | C++      |         12 |          8 |          4 |         24 |
+| /home/toxic/Codes/VsCode/HttpServer/src/Task.cpp                    | C++      |         67 |         40 |          9 |        116 |
+| /home/toxic/Codes/VsCode/HttpServer/src/TaskThreadPool.cpp          | C++      |        103 |         36 |          9 |        148 |
+| /home/toxic/Codes/VsCode/HttpServer/src/TimeUtil.cpp                | C++      |          0 |          8 |          1 |          9 |
+| /home/toxic/Codes/VsCode/HttpServer/src/main.cpp                    | C++      |         20 |          8 |          3 |         31 |
+| /home/toxic/Codes/VsCode/HttpServer/test/default.cpp                | C++      |         12 |          9 |          4 |         25 |
+| /home/toxic/Codes/VsCode/HttpServer/test/log.cpp                    | C++      |         27 |          9 |          7 |         43 |
+| /home/toxic/Codes/VsCode/HttpServer/test/router.cpp                 | C++      |         20 |          9 |          7 |         36 |
+| Total                                                               |          |      2,098 |        949 |        289 |      3,336 |
++---------------------------------------------------------------------+----------+------------+------------+------------+------------+

@@ -18,7 +18,6 @@ g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/Setting.c
 g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/Header.cpp  -o src/Header.o
 g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/main.cpp  -o src/main.o
 g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -o output/main src/Server.o src/Epoll.o src/Router.o src/Task.o src/Response.o src/Socket.o src/FileUtil.o src/Request.o src/LogBuffer.o src/TimeUtil.o src/LogThreadPool.o src/TException.o src/TaskThreadPool.o src/Setting.o src/Header.o src/main.o  -Llib
- 
 echo Executing 'all' complete!
 make: 离开目录“/home/toxic/Codes/VsCode/HttpServer”
  

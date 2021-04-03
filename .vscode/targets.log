@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** 没有规则可制作目标“src/Server.o”，由“main” 需求。 停止。
+ 
 # GNU Make 4.2.1
 # 为 x86_64-pc-linux-gnu 编译
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # 本软件是自由软件：您可以自由修改和重新发布它。
 # 在法律允许的范围内没有其他保证。
 
-# make 数据基础，打印在 Sat Apr  3 16:37:45 2021
+# make 数据基础，打印在 Sat Apr  3 17:39:09 2021
 
 # 变量
 
@@ -83,7 +85,7 @@ MANAGERPID = 1072
 # 环境
 CLUTTER_IM_MODULE = fcitx
 # 环境
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-714ed998-8e6f-4a12-a910-022fb21735d6.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-39ba30b5-28e8-4e05-b12f-d8ae3a5873fb.sock
 # 环境
 LC_NAME = zh_CN.UTF-8
 # 环境
@@ -121,7 +123,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # 环境
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # 环境
-GIO_LAUNCHED_DESKTOP_FILE_PID = 30918
+GIO_LAUNCHED_DESKTOP_FILE_PID = 39863
 # 自动
 %F = $(notdir $%)
 # 环境
@@ -279,10 +281,10 @@ LC_ADDRESS = zh_CN.UTF-8
 # 环境
 LANG = zh_CN.UTF-8
 # 环境
-VSCODE_PID = 30918
+VSCODE_PID = 39863
  
 # 变量的杂凑表状态:
-# 负载=135/1024=13%, 重新杂凑=0, 碰撞=25/198=13%
+# 负载=135/1024=13%, 重新杂凑=0, 碰撞=25/188=13%
 
 # Pattern-specific 变量值
 
@@ -290,10 +292,10 @@ VSCODE_PID = 30918
 
 # 目录
 
-# . (设备 66309，i-节点 5255307)： 10 文件， 无 不可能.
-# src (设备 66309，i-节点 7621674)： 34 文件， 无 不可能.
+# . (设备 66309，i-节点 5255307)： 14 文件， 无 不可能.
+# src (设备 66309，i-节点 7621674)： 18 文件， 无 不可能.
 
-# 44 文件， 无 不可能在 2 目录中。
+# 32 文件， 无 不可能在 2 目录中。
 
 # 隐含规则
 
@@ -304,39 +306,32 @@ VSCODE_PID = 30918
 # 不是一个目标：
 src/Server.o:
 #  对隐含规则的搜索已完成。
-#  最近更新 2021-04-03 16:37:17.811480034
-#  文件已经被更新。
-#  更新成功。
+#  文件不存在。
+#  文件尚未被更新。
 
 # 不是一个目标：
 src/LogBuffer.o:
-#  对隐含规则的搜索已完成。
-#  最近更新 2021-04-03 16:37:17.759479809
-#  文件已经被更新。
-#  更新成功。
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
 
 # 不是一个目标：
 src/TimeUtil.o:
-#  对隐含规则的搜索已完成。
-#  最近更新 2021-04-03 16:37:17.535478837
-#  文件已经被更新。
-#  更新成功。
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
 
 # 不是一个目标：
 src/Task.o:
-#  对隐含规则的搜索已完成。
-#  最近更新 2021-04-03 16:37:17.859480243
-#  文件已经被更新。
-#  更新成功。
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
 
 all: output main
 #  命令行目标。
 #  对隐含规则的搜索尚未完成。
 #  文件不存在。
-#  文件已经被更新。
-#  需要更新 (用 -q 设定)。
-# 变量的杂凑表状态:
-# 负载=0/32=0%, 重新杂凑=0, 碰撞=0/10=0%
+#  文件尚未被更新。
 #  要执行的配方 (从“Makefile”，行 68)：
 	@echo Executing 'all' complete!
 
@@ -347,27 +342,18 @@ all: output main
 
 # 不是一个目标：
 src/main.o:
-#  对隐含规则的搜索已完成。
-#  最近更新 2021-04-03 16:37:18.555483259
-#  文件已经被更新。
-#  更新成功。
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
 
 # 不是一个目标：
 src/Request.o:
-#  对隐含规则的搜索已完成。
-#  最近更新 2021-04-03 16:37:17.763479826
-#  文件已经被更新。
-#  更新成功。
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
 
 # 不是一个目标：
 src/FileUtil.o:
-#  对隐含规则的搜索已完成。
-#  最近更新 2021-04-03 16:37:17.523478785
-#  文件已经被更新。
-#  更新成功。
-
-# 不是一个目标：
-.SUFFIXES:
 #  对隐含规则的搜索尚未完成。
 #  从不检查修改时间。
 #  文件尚未被更新。
@@ -381,24 +367,21 @@ Makefile:
 
 # 不是一个目标：
 src/Response.o:
-#  对隐含规则的搜索已完成。
-#  最近更新 2021-04-03 16:37:17.843480174
-#  文件已经被更新。
-#  更新成功。
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
 
 # 不是一个目标：
 src/Setting.o:
-#  对隐含规则的搜索已完成。
-#  最近更新 2021-04-03 16:37:18.367482445
-#  文件已经被更新。
-#  更新成功。
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
 
 # 不是一个目标：
 src/TaskThreadPool.o:
-#  对隐含规则的搜索已完成。
-#  最近更新 2021-04-03 16:37:18.591483415
-#  文件已经被更新。
-#  更新成功。
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
 
 # 不是一个目标：
 .DEFAULT:
@@ -408,10 +391,9 @@ src/TaskThreadPool.o:
 
 # 不是一个目标：
 src/Socket.o:
-#  对隐含规则的搜索已完成。
-#  最近更新 2021-04-03 16:37:17.083476876
-#  文件已经被更新。
-#  更新成功。
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
 
 run: all
 #  对隐含规则的搜索尚未完成。
@@ -440,48 +422,26 @@ clean:
 
 # 不是一个目标：
 src/Header.o:
-#  对隐含规则的搜索已完成。
-#  最近更新 2021-04-03 16:37:18.223481821
-#  文件已经被更新。
-#  更新成功。
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
 
 # 不是一个目标：
 src/LogThreadPool.o:
-#  对隐含规则的搜索已完成。
-#  最近更新 2021-04-03 16:37:18.423482687
-#  文件已经被更新。
-#  更新成功。
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
 
 main: src/Server.o src/Epoll.o src/Router.o src/Task.o src/Response.o src/Socket.o src/FileUtil.o src/Request.o src/LogBuffer.o src/TimeUtil.o src/LogThreadPool.o src/TException.o src/TaskThreadPool.o src/Setting.o src/Header.o src/main.o
 #  对隐含规则的搜索尚未完成。
-#  隐含/静态模式主干：“”
 #  文件不存在。
-#  文件已经被更新。
-#  需要更新 (用 -q 设定)。
-# 自动
-# @ := main
-# 自动
-# % := 
-# 自动
-# * := 
-# 自动
-# + := src/Server.o src/Epoll.o src/Router.o src/Task.o src/Response.o src/Socket.o src/FileUtil.o src/Request.o src/LogBuffer.o src/TimeUtil.o src/LogThreadPool.o src/TException.o src/TaskThreadPool.o src/Setting.o src/Header.o src/main.o
-# 自动
-# | := 
-# 自动
-# < := src/Server.o
-# 自动
-# ^ := src/Server.o src/Epoll.o src/Router.o src/Task.o src/Response.o src/Socket.o src/FileUtil.o src/Request.o src/LogBuffer.o src/TimeUtil.o src/LogThreadPool.o src/TException.o src/TaskThreadPool.o src/Setting.o src/Header.o src/main.o
-# 自动
-# ? := src/Server.o src/Epoll.o src/Router.o src/Task.o src/Response.o src/Socket.o src/FileUtil.o src/Request.o src/LogBuffer.o src/TimeUtil.o src/LogThreadPool.o src/TException.o src/TaskThreadPool.o src/Setting.o src/Header.o src/main.o
-# 变量的杂凑表状态:
-# 负载=8/32=25%, 重新杂凑=0, 碰撞=2/18=11%
+#  文件尚未被更新。
 #  要执行的配方 (从“Makefile”，行 74)：
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -o $(OUTPUTMAIN) $(OBJECTS) $(LFLAGS) $(LIBS)
 
 output:
 #  对隐含规则的搜索尚未完成。
-#  最近更新 2021-04-03 16:37:18.599483449
+#  最近更新 2021-04-03 17:16:01.652012169
 #  文件已经被更新。
 #  更新成功。
 #  要执行的配方 (从“Makefile”，行 71)：
@@ -489,39 +449,36 @@ output:
 
 # 不是一个目标：
 src/TException.o:
-#  对隐含规则的搜索已完成。
-#  最近更新 2021-04-03 16:37:17.979480764
-#  文件已经被更新。
-#  更新成功。
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
 
 # 不是一个目标：
 src/Router.o:
-#  对隐含规则的搜索已完成。
-#  最近更新 2021-04-03 16:37:18.007480885
-#  文件已经被更新。
-#  更新成功。
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
 
 # 不是一个目标：
 src/Epoll.o:
-#  对隐含规则的搜索已完成。
-#  最近更新 2021-04-03 16:37:17.78747993
-#  文件已经被更新。
-#  更新成功。
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
 
 # 文件杂凑表状态:
-# 负载=26/1024=3%, 重新杂凑=0, 碰撞=0/61=0%
+# 负载=26/1024=3%, 重新杂凑=0, 碰撞=0/60=0%
 # VPATH 搜索路径
 
 # 没有“vpath”搜索路径。
 
 # 没有通用搜索路径(“VPATH”变量)。
 
-# strcache 缓冲: 1 (0) / 字串 = 68 / 空间 = 745 B / 平均 = 10 B
-# 目前缓冲: 尺寸 = 8162 B / 已用 = 745 B / 数量 = 68 / 平均 = 10 B
+# strcache 缓冲: 1 (0) / 字串 = 56 / 空间 = 620 B / 平均 = 11 B
+# 目前缓冲: 尺寸 = 8162 B / 已用 = 620 B / 数量 = 56 / 平均 = 11 B
 
-# strcache 性能：查找 = 89 / 命中率 = 23%
+# strcache 性能：查找 = 76 / 命中率 = 26%
 # 杂凑表统计数据:
-# 负载=68/8192=1%, 重新杂凑=0, 碰撞=2/89=2%
-# 在 Sat Apr  3 16:37:45 2021
+# 负载=56/8192=1%, 重新杂凑=0, 碰撞=2/76=3%
+# 在 Sat Apr  3 17:39:09 2021
  上完成 make 数据基础
  
