@@ -10,3 +10,95 @@
   3. 性能不是很高
   
  性能测试结果:
+
+ 
+ 测试例子:
+ 
+ [静态网页例子](https://github.com/ToxicCloud/HttpServer/blob/master/test/default.cpp)
+ ```cpp
+#include "Server.hpp"
+
+int main(void)
+{
+    Setting setting;
+    Router router;
+    //  第一个参数为Epoll最多监听套接字数量， 第二个参数是任务线程池线程数量
+    Server server(256, 77);
+    
+    setting.Set("WebHome", FileUtil::GetExecPath() + "/WebHome");
+
+    server.InitSetting(&setting)
+        .LoadRouter(&router)
+        .Listen(2021);
+    return 0;
+}
+```
+[拦截指定路径](https://github.com/ToxicCloud/HttpServer/blob/master/test/router.cpp)
+```cpp
+int main(void)
+{
+    Setting setting;
+    Router router;
+    Server server;
+
+    setting.Set("WebHome", FileUtil::GetExecPath() + "/WebHome");
+
+    // Router监听
+    router.On("/api/list", "GET", [](Task& task){
+        task.response->SenText(200, "这是列表接口");
+    });
+
+    router.On("/", "GET", [](Task& task){
+        task.response->Error("这是一个错误");
+    });
+
+    server.InitSetting(&setting)
+        .LoadRouter(&router)
+        .Listen(2021, [](int port, sockaddr_in addr){
+            std::cout << "Listen on http://127.0.0.1:" + port << std::endl;
+        });
+    return 0;
+}
+```
+[日志使用](https://github.com/ToxicCloud/HttpServer/blob/master/test/log.cpp)
+```cpp
+#include "Server.hpp"
+
+int main(void)
+{
+    Setting setting;
+    Router router;
+    Server server;
+
+    setting.Set("WebHome", FileUtil::GetExecPath() + "/WebHome");
+
+    // Router监听
+    router.On("/api/list", "GET", [](Task& task){
+        task.response->SenText(200, "这是列表接口");
+        Log log(task.log_pool);
+        Path path = FileUtil::GetExecPath() + "/Log.txt";
+        log.i(path, "这是一个普通日志记录");
+        log.r(path, "这是一个警告日志记录");
+    });
+
+    router.On("/", "GET", [](Task& task){
+        task.response->Error("这是一个错误");
+        Log log(task.log_pool);
+        Path path = FileUtil::GetExecPath() + "/Log.txt";
+        log.e(path, task.response->path() + "Not Found");
+    });
+
+    server.InitSetting(&setting)
+        .LoadRouter(&router)
+        .Listen(2021, [](int port, sockaddr_in addr){
+            std::cout << "Listen on http://127.0.0.1:" + port << std::endl;
+        });
+    return 0;
+}
+```
+
+
+最后，如果你在研究或者使用中发现任何问题，欢迎随时骚扰我。
+QQ Email: 2938384958@qq.com
+Google Email: tw2938384958@gmail.com
+祝你好运~~
