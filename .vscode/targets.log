@@ -1,0 +1,527 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# 为 x86_64-pc-linux-gnu 编译
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# 许可证：GPLv3+：GNU 通用公共许可证第 3 版或更新版本<http://gnu.org/licenses/gpl.html>。
+# 本软件是自由软件：您可以自由修改和重新发布它。
+# 在法律允许的范围内没有其他保证。
+
+# make 数据基础，打印在 Sat Apr  3 16:37:45 2021
+
+# 变量
+
+# “override”指令
+GNUMAKEFLAGS := 
+# 自动
+<D = $(patsubst %/,%,$(dir $<))
+# 自动
+?F = $(notdir $?)
+# 环境
+DESKTOP_SESSION = ubuntu
+# 默认
+.SHELLFLAGS := -c
+# 环境
+XDG_SESSION_CLASS = user
+# makefile (从“Makefile”，行 21)
+SRC := src
+# 环境
+XDG_SESSION_TYPE = x11
+# 环境
+VSCODE_LOG_NATIVE = false
+# 自动
+?D = $(patsubst %/,%,$(dir $?))
+# 环境
+IM_CONFIG_PHASE = 1
+# makefile (从“Makefile”，行 48)
+INCLUDES := -Iinclude -Iinclude/Utils
+# 自动
+@D = $(patsubst %/,%,$(dir $@))
+# 环境
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# 环境
+GDMSESSION = ubuntu
+# 环境
+XMODIFIERS = @im=fcitx
+# makefile
+CURDIR := /home/toxic/Codes/VsCode/HttpServer
+# makefile
+SHELL = /bin/sh
+# 环境
+JRE_HOME = ::/usr/local/jdk-15/jre
+# 环境
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"7f21593a6f690d3f9943ef151cd5606e.zh-cn","_translationsConfigFile":"/home/toxic/.config/Code/clp/7f21593a6f690d3f9943ef151cd5606e.zh-cn/tcf.json","_cacheRoot":"/home/toxic/.config/Code/clp/7f21593a6f690d3f9943ef151cd5606e.zh-cn","_resolvedLanguagePackCoreLocation":"/home/toxic/.config/Code/clp/7f21593a6f690d3f9943ef151cd5606e.zh-cn/2b9aebd5354a3629c3aba0a5f5df49f43d6689f8","_corruptedFile":"/home/toxic/.config/Code/clp/7f21593a6f690d3f9943ef151cd5606e.zh-cn/corrupted.info","_languagePackSupport":true}
+# 环境
+_ = /usr/share/code/code
+# 环境
+JOURNAL_STREAM = 8:36795
+# 环境
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# makefile (从“Makefile”，行 1)
+MAKEFILE_LIST :=  Makefile
+# 环境
+JAVA_HOME = :/usr/local/jdk-15
+# 自动
+@F = $(notdir $@)
+# 环境
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# 环境
+USERNAME = toxic
+# makefile (从“Makefile”，行 54)
+SOURCES := src/Server.cpp src/Epoll.cpp src/Router.cpp src/Task.cpp src/Response.cpp src/Socket.cpp src/FileUtil.cpp src/Request.cpp src/LogBuffer.cpp src/TimeUtil.cpp src/LogThreadPool.cpp src/TException.cpp src/TaskThreadPool.cpp src/Setting.cpp src/Header.cpp src/main.cpp
+# makefile (从“Makefile”，行 10)
+CXXFLAGS := -std=c++17 -W -Wextra -g -pthread
+# 环境
+MAKELEVEL := 0
+# 环境
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# 环境
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# 环境
+VSCODE_VERBOSE_LOGGING = true
+# 环境
+MANAGERPID = 1072
+# 环境
+CLUTTER_IM_MODULE = fcitx
+# 环境
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-714ed998-8e6f-4a12-a910-022fb21735d6.sock
+# 环境
+LC_NAME = zh_CN.UTF-8
+# 环境
+GSETTINGS_SCHEMA_DIR = /home/toxic/data
+# 默认
+MAKE_HOST := x86_64-pc-linux-gnu
+# 环境
+PATH = /home/toxic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/vim8/bin:/usr/local/vim8/bin:/usr/local/jdk-15/bin:/usr/local/swift-5.3.3/usr/bin:/usr/local/WebBench/bin:/home/toxic/bin
+# 环境
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# 环境
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# 环境
+SESSION_MANAGER = local/Toxic-Ubuntu:@/tmp/.ICE-unix/1424,unix/Toxic-Ubuntu:/tmp/.ICE-unix/1424
+# 环境
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (从“Makefile”，行 41)
+LIBDIRS := lib
+# 环境
+XDG_MENU_PREFIX = gnome-
+# 环境
+VSCODE_LOG_STACK = false
+# 环境
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=3f299257-8762-49c2-b242-a0c31d8f1764&iid=3f299257-8762-49c2-b242-a0c31d8f1764&sid=3f299257-8762-49c2-b242-a0c31d8f1764","uploadToServer":true}
+# 环境
+INVOCATION_ID = b806ef3eecca42b2ae2c6bf9d45b9c07
+# makefile (从“Makefile”，行 27)
+LIB := lib
+# 默认
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# 环境
+LS_COLORS = 
+# 环境
+XDG_SESSION_DESKTOP = ubuntu
+# 环境
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# 环境
+GIO_LAUNCHED_DESKTOP_FILE_PID = 30918
+# 自动
+%F = $(notdir $%)
+# 环境
+DISPLAY = :0
+# 环境
+GTK_IM_MODULE = fcitx
+# 环境
+VSCODE_PIPE_LOGGING = true
+# 环境
+PWD = /home/toxic/Codes/VsCode/HttpServer
+# makefile (从“Makefile”，行 65)
+OUTPUTMAIN := output/main
+# 默认
+.LOADED := 
+# 环境
+SSH_AGENT_PID = 1325
+# 环境
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# 环境
+GTK_MODULES = gail:atk-bridge
+# 环境
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# 环境
+HOME = /home/toxic
+# 环境
+LOGNAME = toxic
+# 环境
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# 自动
++F = $(notdir $+)
+# makefile (从“Makefile”，行 40)
+INCLUDEDIRS := include include/Utils
+# 环境
+ZSH = /home/toxic/.oh-my-zsh
+# 环境
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# 环境
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# 自动
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (从“Makefile”，行 44)
+MD := mkdir -p
+# 环境
+LC_TIME = zh_CN.UTF-8
+# 默认
+MAKE = $(MAKE_COMMAND)
+# 默认
+MAKECMDGOALS := all
+# 环境
+QT_IM_MODULE = fcitx
+# 环境
+SHLVL = 0
+# makefile (从“Makefile”，行 42)
+FIXPATH = $1
+# 环境
+GNOME_SHELL_SESSION_MODE = ubuntu
+# 默认
+MAKE_VERSION := 4.2.1
+# 环境
+USER = toxic
+# 环境
+LC_MONETARY = zh_CN.UTF-8
+# makefile
+.DEFAULT_GOAL := all
+# makefile (从“Makefile”，行 24)
+INCLUDE := include
+# 环境
+XDG_CURRENT_DESKTOP = Unity
+# 环境
+CLASSPATH = ::/usr/local/jdk-15/lib:::/usr/local/jdk-15/jre/lib
+# 环境
+LESS = -R
+# 自动
+%D = $(patsubst %/,%,$(dir $%))
+# 环境
+LC_TELEPHONE = zh_CN.UTF-8
+# makefile (从“Makefile”，行 15)
+LFLAGS = 
+# 默认
+MAKE_COMMAND := make
+# 环境
+VSCODE_NODE_CACHED_DATA_DIR = /home/toxic/.config/Code/CachedData/2b9aebd5354a3629c3aba0a5f5df49f43d6689f8
+# 环境
+OLDPWD = /home/toxic
+# 默认
+.VARIABLES := 
+# 自动
+*F = $(notdir $*)
+# 环境
+LANGUAGE = zh_CN:zh:en_US:en
+# 环境
+VSCODE_IPC_HOOK = /run/user/1000/vscode-2e061ca4-1.54.3-main.sock
+# makefile (从“Makefile”，行 43)
+RM = rm -f
+# makefile
+MAKEFLAGS = pqrR
+# 环境
+MFLAGS = -pqrR
+# 自动
+*D = $(patsubst %/,%,$(dir $*))
+# 环境
+BREAKPAD_DUMP_LOCATION = /home/toxic/.config/Code/exthost Crash Reports
+# makefile (从“Makefile”，行 38)
+MAIN := main
+# 自动
++D = $(patsubst %/,%,$(dir $+))
+# 环境
+MK_AOSP_REMOTE = ustc
+# makefile (从“Makefile”，行 39)
+SOURCEDIRS := src
+# 环境
+LC_PAPER = zh_CN.UTF-8
+# 环境
+QT_ACCESSIBILITY = 1
+# makefile (从“Makefile”，行 18)
+OUTPUT := output
+# “override”指令
+.SHELLSTATUS := 0
+# 默认
+MAKEFILES := 
+# 环境
+LC_NUMERIC = zh_CN.UTF-8
+# 自动
+<F = $(notdir $<)
+# 环境
+ELECTRON_RUN_AS_NODE = 1
+# makefile (从“Makefile”，行 7)
+CXX = g++
+# 环境
+LC_MEASUREMENT = zh_CN.UTF-8
+# 环境
+PAGER = less
+# 环境
+QT4_IM_MODULE = fcitx
+# makefile (从“Makefile”，行 51)
+LIBS := -Llib
+# 自动
+^F = $(notdir $^)
+# 默认
+SUFFIXES := 
+# 环境
+CHROME_DESKTOP = code-url-handler.desktop
+# 环境
+WINDOWPATH = 2
+# 默认
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# 环境
+LC_IDENTIFICATION = zh_CN.UTF-8
+# 默认
+.RECIPEPREFIX := 
+# makefile (从“Makefile”，行 57)
+OBJECTS := src/Server.o src/Epoll.o src/Router.o src/Task.o src/Response.o src/Socket.o src/FileUtil.o src/Request.o src/LogBuffer.o src/TimeUtil.o src/LogThreadPool.o src/TException.o src/TaskThreadPool.o src/Setting.o src/Header.o src/main.o
+# 环境
+LC_ADDRESS = zh_CN.UTF-8
+# 环境
+LANG = zh_CN.UTF-8
+# 环境
+VSCODE_PID = 30918
+ 
+# 变量的杂凑表状态:
+# 负载=135/1024=13%, 重新杂凑=0, 碰撞=25/198=13%
+
+# Pattern-specific 变量值
+
+# 没有 pattern-specific 变量的值。
+
+# 目录
+
+# . (设备 66309，i-节点 5255307)： 10 文件， 无 不可能.
+# src (设备 66309，i-节点 7621674)： 34 文件， 无 不可能.
+
+# 44 文件， 无 不可能在 2 目录中。
+
+# 隐含规则
+
+# 没有隐含规则。
+
+# 文件
+
+# 不是一个目标：
+src/Server.o:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:17.811480034
+#  文件已经被更新。
+#  更新成功。
+
+# 不是一个目标：
+src/LogBuffer.o:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:17.759479809
+#  文件已经被更新。
+#  更新成功。
+
+# 不是一个目标：
+src/TimeUtil.o:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:17.535478837
+#  文件已经被更新。
+#  更新成功。
+
+# 不是一个目标：
+src/Task.o:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:17.859480243
+#  文件已经被更新。
+#  更新成功。
+
+all: output main
+#  命令行目标。
+#  对隐含规则的搜索尚未完成。
+#  文件不存在。
+#  文件已经被更新。
+#  需要更新 (用 -q 设定)。
+# 变量的杂凑表状态:
+# 负载=0/32=0%, 重新杂凑=0, 碰撞=0/10=0%
+#  要执行的配方 (从“Makefile”，行 68)：
+	@echo Executing 'all' complete!
+
+.PHONY: clean
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
+
+# 不是一个目标：
+src/main.o:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:18.555483259
+#  文件已经被更新。
+#  更新成功。
+
+# 不是一个目标：
+src/Request.o:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:17.763479826
+#  文件已经被更新。
+#  更新成功。
+
+# 不是一个目标：
+src/FileUtil.o:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:17.523478785
+#  文件已经被更新。
+#  更新成功。
+
+# 不是一个目标：
+.SUFFIXES:
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
+
+# 不是一个目标：
+Makefile:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:04.639422202
+#  文件已经被更新。
+#  更新成功。
+
+# 不是一个目标：
+src/Response.o:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:17.843480174
+#  文件已经被更新。
+#  更新成功。
+
+# 不是一个目标：
+src/Setting.o:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:18.367482445
+#  文件已经被更新。
+#  更新成功。
+
+# 不是一个目标：
+src/TaskThreadPool.o:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:18.591483415
+#  文件已经被更新。
+#  更新成功。
+
+# 不是一个目标：
+.DEFAULT:
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
+
+# 不是一个目标：
+src/Socket.o:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:17.083476876
+#  文件已经被更新。
+#  更新成功。
+
+run: all
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
+#  要执行的配方 (从“Makefile”，行 91)：
+	./$(OUTPUTMAIN) &
+	@echo Executing 'run: all' complete!
+
+.cpp.o:
+#  对隐含规则的搜索尚未完成。
+#  从不检查修改时间。
+#  文件尚未被更新。
+#  要执行的配方 (从“Makefile”，行 81)：
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $<  -o $@
+
+clean:
+#  假目标 (.PHONY的前提)。
+#  对隐含规则的搜索尚未完成。
+#  文件不存在。
+#  文件尚未被更新。
+#  要执行的配方 (从“Makefile”，行 85)：
+	$(RM) $(OUTPUTMAIN)
+	$(RM) $(call FIXPATH,$(OBJECTS))
+	@echo Cleanup complete!
+
+# 不是一个目标：
+src/Header.o:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:18.223481821
+#  文件已经被更新。
+#  更新成功。
+
+# 不是一个目标：
+src/LogThreadPool.o:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:18.423482687
+#  文件已经被更新。
+#  更新成功。
+
+main: src/Server.o src/Epoll.o src/Router.o src/Task.o src/Response.o src/Socket.o src/FileUtil.o src/Request.o src/LogBuffer.o src/TimeUtil.o src/LogThreadPool.o src/TException.o src/TaskThreadPool.o src/Setting.o src/Header.o src/main.o
+#  对隐含规则的搜索尚未完成。
+#  隐含/静态模式主干：“”
+#  文件不存在。
+#  文件已经被更新。
+#  需要更新 (用 -q 设定)。
+# 自动
+# @ := main
+# 自动
+# % := 
+# 自动
+# * := 
+# 自动
+# + := src/Server.o src/Epoll.o src/Router.o src/Task.o src/Response.o src/Socket.o src/FileUtil.o src/Request.o src/LogBuffer.o src/TimeUtil.o src/LogThreadPool.o src/TException.o src/TaskThreadPool.o src/Setting.o src/Header.o src/main.o
+# 自动
+# | := 
+# 自动
+# < := src/Server.o
+# 自动
+# ^ := src/Server.o src/Epoll.o src/Router.o src/Task.o src/Response.o src/Socket.o src/FileUtil.o src/Request.o src/LogBuffer.o src/TimeUtil.o src/LogThreadPool.o src/TException.o src/TaskThreadPool.o src/Setting.o src/Header.o src/main.o
+# 自动
+# ? := src/Server.o src/Epoll.o src/Router.o src/Task.o src/Response.o src/Socket.o src/FileUtil.o src/Request.o src/LogBuffer.o src/TimeUtil.o src/LogThreadPool.o src/TException.o src/TaskThreadPool.o src/Setting.o src/Header.o src/main.o
+# 变量的杂凑表状态:
+# 负载=8/32=25%, 重新杂凑=0, 碰撞=2/18=11%
+#  要执行的配方 (从“Makefile”，行 74)：
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -o $(OUTPUTMAIN) $(OBJECTS) $(LFLAGS) $(LIBS)
+
+output:
+#  对隐含规则的搜索尚未完成。
+#  最近更新 2021-04-03 16:37:18.599483449
+#  文件已经被更新。
+#  更新成功。
+#  要执行的配方 (从“Makefile”，行 71)：
+	$(MD) $(OUTPUT)
+
+# 不是一个目标：
+src/TException.o:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:17.979480764
+#  文件已经被更新。
+#  更新成功。
+
+# 不是一个目标：
+src/Router.o:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:18.007480885
+#  文件已经被更新。
+#  更新成功。
+
+# 不是一个目标：
+src/Epoll.o:
+#  对隐含规则的搜索已完成。
+#  最近更新 2021-04-03 16:37:17.78747993
+#  文件已经被更新。
+#  更新成功。
+
+# 文件杂凑表状态:
+# 负载=26/1024=3%, 重新杂凑=0, 碰撞=0/61=0%
+# VPATH 搜索路径
+
+# 没有“vpath”搜索路径。
+
+# 没有通用搜索路径(“VPATH”变量)。
+
+# strcache 缓冲: 1 (0) / 字串 = 68 / 空间 = 745 B / 平均 = 10 B
+# 目前缓冲: 尺寸 = 8162 B / 已用 = 745 B / 数量 = 68 / 平均 = 10 B
+
+# strcache 性能：查找 = 89 / 命中率 = 23%
+# 杂凑表统计数据:
+# 负载=68/8192=1%, 重新杂凑=0, 碰撞=2/89=2%
+# 在 Sat Apr  3 16:37:45 2021
+ 上完成 make 数据基础
+ 

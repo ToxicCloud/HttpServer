@@ -1,0 +1,24 @@
+make --dry-run --always-make --keep-going --print-directory
+make: 进入目录“/home/toxic/Codes/VsCode/HttpServer”
+mkdir -p output
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/Server.cpp  -o src/Server.o
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/Epoll.cpp  -o src/Epoll.o
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/Router.cpp  -o src/Router.o
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/Task.cpp  -o src/Task.o
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/Response.cpp  -o src/Response.o
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/Socket.cpp  -o src/Socket.o
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/FileUtil.cpp  -o src/FileUtil.o
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/Request.cpp  -o src/Request.o
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/LogBuffer.cpp  -o src/LogBuffer.o
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/TimeUtil.cpp  -o src/TimeUtil.o
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/LogThreadPool.cpp  -o src/LogThreadPool.o
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/TException.cpp  -o src/TException.o
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/TaskThreadPool.cpp  -o src/TaskThreadPool.o
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/Setting.cpp  -o src/Setting.o
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/Header.cpp  -o src/Header.o
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -c src/main.cpp  -o src/main.o
+g++ -std=c++17 -W -Wextra -g -pthread -Iinclude -Iinclude/Utils -o output/main src/Server.o src/Epoll.o src/Router.o src/Task.o src/Response.o src/Socket.o src/FileUtil.o src/Request.o src/LogBuffer.o src/TimeUtil.o src/LogThreadPool.o src/TException.o src/TaskThreadPool.o src/Setting.o src/Header.o src/main.o  -Llib
+ 
+echo Executing 'all' complete!
+make: 离开目录“/home/toxic/Codes/VsCode/HttpServer”
+ 
