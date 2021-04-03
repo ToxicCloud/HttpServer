@@ -11,6 +11,13 @@
   
  使用[webbench](https://github.com/EZLippi/WebBench)压力测试结果:
 ![压力测试例子](https://github.com/ToxicCloud/HttpServer/blob/master/test/webbench.png)
+
+他的使用很简单，你只需要进入到源码根目录然后执行make即可
+```shell
+cd source_code_root
+make && make run
+// make run
+```
  
  测试例子:
  
